@@ -18,6 +18,7 @@ public class UserController {
             if(!isPresent(user.getName())) {
                 return false;
             }
+
             user.setName(user.getName().trim());
 
             if(!isValidAlphaNumeric(user.getName())) {
